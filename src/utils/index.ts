@@ -1,7 +1,7 @@
 import { PDFDocument, PDFName, PDFPage, rgb } from 'pdf-lib';
 import * as pdfjsLib from 'pdfjs-dist';
 // Configure the worker source
-pdfjsLib.GlobalWorkerOptions.workerSrc = `/pdf.worker.mjs`;
+pdfjsLib.GlobalWorkerOptions.workerSrc = `./pdf.worker.mjs`;
 
 async function extractTextCoordinates(page: pdfjsLib.PDFPageProxy) {
   // const pdf = await pdfjsLib.getDocument({ data: pdfBytes }).promise;
